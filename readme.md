@@ -25,3 +25,18 @@
 - Imagenes
 - Layout tags
 - Divs
+
+# IronHack class nov 08
+
+### Readme file Markdown language
+
+- Concepto
+- Markdown language
+
+### CSS
+
+- Inject css code into HTML
+- Selectors
+- Global, tag, id, class
+- Fonts
+- Borders

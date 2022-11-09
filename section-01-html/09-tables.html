@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+        }
+        .styled-table thead th {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+        .tab-header {
+            background-color: #009879;
+        }
+    </style>
+</head>
+<body>
+    <h2>Table Example 1</h2>
+    <table class="styled-table">
+        <tr>
+            <th class="tab-header">Artist</th>
+            <th class="tab-header">Genre</th>
+            <th class="tab-header">Country</th>
+        </tr>
+        <tr>
+            <td>The Smiths</td>
+            <td>Rock</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Pink Floyd</td>
+            <td>Rock</td>
+            <td>UK</td>
+        </tr>
+    </table>
+
+    <h2>Table Example 2</h2>
+    <table class="styled-table" id="food-table">
+        <tr>
+            <th class="tab-header">Name</th>
+            <th class="tab-header">Picture</th>
+            <th class="tab-header">Origin</th>
+            <th class="tab-header">Rating</th>
+        </tr>
+        <tr>
+            <td>Pizza</td>
+            <td><img src="../section-01-html/assets/imgs/pizza.jpg" alt="pizza" width="200"></td>
+            <td>Napoles, Italy</td>
+            <td>★★★★☆</td>
+        </tr>
+        <tr>
+            <td>Paella</td>
+            <td><img src="../section-01-html/assets/imgs/paella.jpg" alt="paella" width="200"></td>
+            <td>Valencia, Spain</td>
+            <td>★★★★★</td>
+        </tr>
+        <tr>
+            <td>Borsch</td>
+            <td><img src="../section-01-html/assets/imgs/borsch.jpg" alt="borsch" width="200"></td>
+            <td>Ukraine</td>
+            <td>★★★★★</td>
+        </tr>
+        <tr>
+            <td>Chicken Tikka Masala</td>
+            <td><img src="../section-01-html/assets/imgs/chicken-tikka-masala.jpg" alt="Chicken Tikka Masala" width="200"></td>
+            <td>India</td>
+            <td>★★★☆☆</td>
+        </tr>
+    </table>
+</body>
+</html>
