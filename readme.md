@@ -40,3 +40,5 @@
 - Global, tag, id, class
 - Fonts
 - Borders
+- Float
+-
