@@ -9,6 +9,7 @@ body{
 
 header{
     background-image: url('../images/apple-pie.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
     color:beige;
@@ -29,7 +30,7 @@ section {
 
 .container {
     max-width: 700px;
-    margin: 30px auto;
+    margin: auto;
 }
 
 .ingridients ul {
