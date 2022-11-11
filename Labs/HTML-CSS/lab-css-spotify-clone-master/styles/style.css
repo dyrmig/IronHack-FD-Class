@@ -1,0 +1,208 @@
+/*
+Colors:
+
+Text: 1A1A1A
+Green: #00B172
+White: #FFF
+
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.top-card {
+    background-image: url('../images/landing.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: solid 1px gray;
+}
+
+header img {
+    height: 40px;
+    margin-left: 30px;
+}
+
+nav a {
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+}
+.text-box h1 {
+    font-size: 3rem;
+    margin: 20px;
+}
+.text-box p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.middle-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.middle-card-container h2 {
+    border-bottom: solid 3px #00B172;
+    margin: 30px 20px;
+}
+
+.imgs-container {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.card-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.card-img img {
+    width: 30%;
+}
+
+.card-img h3 {
+    color: #00B172;
+    margin: 20px;
+}
+
+.card-img p {
+    font-size: 1.2rem;
+}
+
+.text-box {
+    width: 50%;
+}
+
+.bootom-card {
+    background-color: #00B172;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+
+.bootom-card > div{
+    width: 31%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 25%;
+}
+
+.screenshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screenshot img {
+    width: 70%;
+}
+
+.text * {
+    margin: 20px 20px;
+}
+
+.text h2 {
+    border-bottom: solid 3px ;
+    width: auto;
+    padding-right: 20px;
+}
+
+@media (max-width: 1080px) {
+    header {
+        flex-direction: column;
+    }
+    .imgs-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 30px;
+    }
+    
+    .card-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+    
+    .card-img img {
+        width: 30%;
+    }
+
+    .bootom-card {
+        background-color: #00B172;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px;
+    }
+
+    .bootom-card > div{
+        width: 70%;
+    }
+
+    .screenshot{
+        display: none;
+    }
+
+    .logo img {
+        width: 15%;
+    }
+}

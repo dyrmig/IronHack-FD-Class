@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+
+    <!-- CSS Style -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Styles of Body  */
+      body {
+        font-family: Arial;
+        margin: 0;
+        position: relative;
+      }
+
+      /* Note Section */
+      .note {
+        background: yellow;
+        padding: 4px;
+      }
+
+      .note h4 {
+        margin: 0.5rem;
+        text-align: center;
+      }
+
+      .header {
+        padding: 20px;
+        text-align: center;
+        background: #356473;
+        color: white;
+      }
+
+      /* nav links */
+      .navbar {
+        display: flex;
+        background: #333;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      /* Main Content */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      /* Nos creamos dos columnas que esten una al lado de la otra */
+      .side {
+        flex: 30%;
+        background: #f1f1f1;
+        padding: 20px;
+      }
+
+      .main {
+        flex: 70%;
+        background: #fafafa;
+        padding: 20px;
+      }
+
+      .fakeimg {
+        background: #aaa;
+        width: 100%;
+        padding: 20px;
+        height: 200px;
+      }
+
+      .fakeimg-2 {
+        background: #aaa;
+        width: 100%;
+        padding: 20px;
+        height: 60px;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+      }
+
+      /* MEDIA QUERY */
+      /* Responsive layout que se accione cuando la pantalla este pro debajo de 700px de anchura, vamos a hacer que las columnas que estan dentro del main se stackeen encima de la otra */
+
+      @media (max-width: 700px) {
+        .row,
+        .navbar {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .row,
+        .navbar {
+          flex-direction: column;
+        }
+        
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Note -->
+    <div class="note">
+      <h4>Mueve la pantalla para que veas los efectos</h4>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <h1>My Website</h1>
+      <p>with a flexible <b>media query</b> layout</p>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </div>
+    <!-- Main Content -->
+    <div class="row">
+      <!-- Side Content -->
+      <div class="side">
+        <h2>About Me:</h2>
+        <div class="fakeimg">Image</div>
+        <p>Some text about my cool self and the wu tang clan</p>
+        <h3>More text</h3>
+        <p>My pictures:</p>
+        <div class="fakeimg-2">Image</div>
+        <br />
+        <div class="fakeimg-2">Image</div>
+        <br />
+        <div class="fakeimg-2">Image</div>
+        <br />
+      </div>
+      <!-- Main Content -->
+      <div class="main">
+        <h2>Title heading</h2>
+        <h5>Title description, Nov 10, 2022</h5>
+        <div class="fakeimg">Image</div>
+        <p>Some textt...</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
+          maiores corrupti fugiat maxime architecto nesciunt error ex culpa,
+          quidem iusto temporibus voluptate ab dicta. Ad possimus expedita
+          perspiciatis! Iure, ab!
+        </p>
+        <br />
+
+        <h2>Title heading</h2>
+        <h5>Title description, Nov 10, 2022</h5>
+        <div class="fakeimg">Image</div>
+        <p>Some textt...</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
+          maiores corrupti fugiat maxime architecto nesciunt error ex culpa,
+          quidem iusto temporibus voluptate ab dicta. Ad possimus expedita
+          perspiciatis! Iure, ab!
+        </p>
+        <br />
+
+        <h2>Title heading</h2>
+        <h5>Title description, Nov 10, 2022</h5>
+        <div class="fakeimg">Image</div>
+        <p>Some textt...</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
+          maiores corrupti fugiat maxime architecto nesciunt error ex culpa,
+          quidem iusto temporibus voluptate ab dicta. Ad possimus expedita
+          perspiciatis! Iure, ab!
+        </p>
+        <br />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+  </body>
+</html>
