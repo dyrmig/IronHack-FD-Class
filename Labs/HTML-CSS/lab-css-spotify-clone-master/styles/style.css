@@ -44,6 +44,10 @@ header {
     border-bottom: solid 1px gray;
 }
 
+.js-background {
+    background-color: #00B172 !important;
+}
+
 header img {
     height: 40px;
     margin-left: 30px;

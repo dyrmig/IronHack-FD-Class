@@ -72,4 +72,15 @@
     </div>
 
   </body>
+  <script>
+    const changeHeaderColor = document.querySelector("header");
+    window.onscroll = function(){
+      const scroll = window.pageYOffset;
+      if(scroll>600){
+        changeHeaderColor.classList.add("js-background")
+      } else {
+        changeHeaderColor.classList.remove("js-background")
+      }
+    }
+  </script>
 </html>

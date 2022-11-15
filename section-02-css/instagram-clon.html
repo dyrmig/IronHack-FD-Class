@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "nav space newPosts sideBar"
+                "nav space main sideBar";
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            grid-area: nav;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+        nav img {
+            width: 100%;
+        }
+        .new-posts {
+            grid-area: newPosts;
+        }
+        main {
+            grid-area: main;
+        }
+        .side-bar {
+            grid-area: sideBar;
+        }
+        .side-bar>*{
+            margin: 15px;
+        }
+        .spacer{
+            grid-area: space;
+        }
+        .user-id {
+            display: flex;
+        }
+        .user-side-title{
+            display: flex;
+        }
+        .user-id img {
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+        }
+        .user-side-title img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+        .suggested-user{
+            display: flex;
+        }
+        .suggested-user img {
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/d2e56fc3c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="./assets/images/Instagram_logo.png" alt="Instagram logo">
+        <i class="fa-solid fa-house"></i>
+        <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="#">Search</a>
+        <a href="#">Explore</a>
+        <a href="#">Messages</a>
+        <a href="#">Notifications</a>
+        <a href="#">Create</a>
+        <a href="#">Prophile</a>
+        <a href="#">More</a>
+    </nav>
+    <div class="new-posts">New Posts</div>
+    <div class="spacer"></div>
+    <main>
+        <div class="displayer">
+            <div class="user-id"><img src="./assets/images/tibetfox.jpg" alt=""><h2>ericstonestreet</h2></div>
+            <div class="main-img"><img src="./assets/images/main-img.jpg" alt=""></div>
+        </div>
+    </main>
+    <div class="side-bar">
+        <div class="user-side-title">
+            <img src="./assets/images/owl.jpg" alt="">
+            <h2>diegozito</h2>
+        </div>
+        <h3>Suggestions for you</h3>
+        <div class="suggested-user">
+            <div class="img">
+                <img src="./assets/images/manul.jpg" alt="">
+            </div>
+            <div class="suggested-user-txt">
+                <h4>DistroupOfficial</h4>
+                <h5>New to Instagram</h5>
+            </div>
+        </div>
+        <div class="suggested-user">
+            <div class="img">
+                <img src="./assets/images/manul.jpg" alt="">
+            </div>
+            <div class="suggested-user-txt">
+                <h4>DistroupOfficial</h4>
+                <h5>New to Instagram</h5>
+            </div>
+        </div>
+        <div class="suggested-user">
+            <div class="img">
+                <img src="./assets/images/manul.jpg" alt="">
+            </div>
+            <div class="suggested-user-txt">
+                <h4>DistroupOfficial</h4>
+                <h5>New to Instagram</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

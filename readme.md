@@ -1,4 +1,4 @@
-# IronHack class nov 07
+# IronHack class
 
 ## Conceptos vistos :bowtie:
 
@@ -26,8 +26,6 @@
 - Layout tags
 - Divs
 
-# IronHack class nov 08
-
 ### Readme file Markdown language
 
 - Concepto
@@ -41,4 +39,14 @@
 - Fonts
 - Borders
 - Float
--
+- Media Queries
+
+### JavaScript
+
+- Sintáxis
+- Variables
+- Objetos
+- Arrays
+- Tipos de datos
+- Operadores lógicos y matemáticos
+- Bucles y Loops
