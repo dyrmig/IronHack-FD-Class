@@ -50,3 +50,6 @@
 - Tipos de datos
 - Operadores lógicos y matemáticos
 - Bucles y Loops
+- Funciones
+- Arrays y sus metodos
+- Manipulación del DOM

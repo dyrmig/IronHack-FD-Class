@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="boton">Click me!</button>
+
+    <button id="boton2" onclick="(()=>alert('holaaaa'))()">Click me 2</button>
+    <button onclick="hola2()">click me 3</button>
+</body>
+<script>
+    const button = document.querySelector('#boton');
+    function hola() {
+        alert('hola visteh');
+    }
+    //button.addEventListener('dblclick', hola);
+
+    button.onclick = function () {
+        alert('hola viste 2');
+    }
+
+    const hola2 = () => {
+        alert('hola hola');
+    }
+</script>
+</html>
