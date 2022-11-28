@@ -95,7 +95,6 @@ Promise.all([
     obtainInstruction('brusselsSprouts', 6),
     obtainInstruction('brusselsSprouts', 7)
   ]).then(values => {
-  //console.log(values);
   values.forEach(element => {
     document.querySelector('#brusselsSprouts').innerHTML  += `<li>${element}</li>`;
     console.log(element);
