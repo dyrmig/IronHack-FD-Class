@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import ConditionalRenderView from '../views/ConditionalRender.vue'
 import IteratingElements from '../components/basicComponents/IteratingElements.vue'
 import IteratingEjemplos from '../components/basicComponents/IteratingEjemplos.vue'
+import ComputedProperty from '../views/ComputedProperty.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -43,6 +44,14 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../components/basicComponents/IteratingEjemplos.vue')
+    },
+    {
+      path: '/computedproperty',
+      name: 'computed property',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/ComputedProperty.vue')
     }
   ]
 })

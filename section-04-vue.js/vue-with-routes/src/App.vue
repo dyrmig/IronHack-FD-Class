@@ -16,6 +16,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/conditional">Conditional Rendering</RouterLink>
         <RouterLink to="/iterating">Iterating Elements</RouterLink>
         <RouterLink to="/iteratingejemplos">Iterating Ejemplos</RouterLink>
+        <RouterLink to="/computedproperty">Computed Property</RouterLink>
       </nav>
     </div>
   </header>

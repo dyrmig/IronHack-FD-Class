@@ -53,3 +53,15 @@
 - Funciones
 - Arrays y sus metodos
 - Manipulación del DOM
+
+### Vue.js
+
+- Instalación y configuración
+- Componentes
+- Routing
+- Text binding
+- Atribute binding
+- Renderización Condicional
+- Bucles
+- Slot
+- Props
